@@ -13,7 +13,7 @@ SECRET_KEY = 'p)5iv&k!+j4+s0ll6l=wx$l8rz1^uhkx*_8u@kb7)19v-vc(v5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['Romulogss.pythonanywhere.com']
 
 DEFAULT_DATABASE_URL = 'sqlite:///' + os.path.join(BASE_DIR, 'db.sqlite3')
 
@@ -118,8 +118,10 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
+MEDIA_ROOT = '/home/Romulogss/djangosigetcc/media'
+MEDIA_URL = '/media/'
+STATIC_ROOT = '/home/Romulogss/djangosigetcc/static'
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
@@ -129,10 +131,6 @@ STATICFILES_DIRS = [
 FIXTURE_DIRS = [
     os.path.join(BASE_DIR, 'fixtures'),
 ]
-
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
-MEDIA_URL = 'media/'
-
 SESSION_EXPIRE_AT_BROWSER_CLOSE = False
 
 LOGIN_NOT_REQUIRED = (
