@@ -1,5 +1,4 @@
 import os
-import django_heroku
 
 BASE_DIR = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 PROJECT_ROOT = os.path.abspath(os.path.dirname(BASE_DIR))
@@ -141,5 +140,3 @@ LOGIN_NOT_REQUIRED = (
     r'/login/trocarsenha/',
     r'/logout/',
 )
-
-# django_heroku.settings(locals())
